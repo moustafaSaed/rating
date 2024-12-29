@@ -1,0 +1,123 @@
+body {
+    background-image: url("images/Untitled\ design.png");
+    background-size: cover;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.body {
+    background-color: rgb(11, 0, 31);
+    width: 95vw;
+    height: 95vh;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 15vh;
+}
+
+header .logo {
+    width: 200px;
+}
+
+header .logo img {
+    width: 100%;
+}
+main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 80vh;
+}
+.rate-box {
+    background-color: #eee;
+    width: 30vw;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    padding: 25px;
+    margin: auto;
+    gap: 20px;
+}
+.rate-box .star {
+    background-color: #178fc7;
+    color: #fff;
+    width: 25px;
+    height: 25px;
+    padding: 3px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.rate-box .star i {
+    margin: 0;
+    padding: 0;
+}
+
+.rate-box h2 {}
+
+.rate-box p {}
+
+.rate-box ul.rate-nmbrs {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.rate-box ul.rate-nmbrs a {
+    text-decoration: none;
+}
+
+.rate-box ul.rate-nmbrs a li {
+    padding: 5px;
+    width: 30px;height: 30px;
+    display: flex;align-items: center;justify-content: center;
+    border-radius: 50%;
+    background-color: #aaa;
+    font-size: 20px;
+    color: rgb(11, 0, 31);
+    transition: all .5s;
+}
+
+.rate-box ul.rate-nmbrs a.active li {
+    background-color: rgb(23 143 199);
+    color: #fff;
+    border: 2px solid rgb(11, 0, 31);
+}
+
+.rate-box ul.rate-nmbrs a:hover li {
+    background-color: rgb(11, 0, 31);
+    color: #fff;
+    opacity: .9;
+    scale: 1.09;
+}
+
+input {
+    padding: 7px;
+    border-radius: 4px;
+    border: none;
+    background-color: #178fc7;
+    font-size: 18px;
+    text-transform: capitalize;
+    color: white;
+    letter-spacing: 2px;
+    border-bottom: 4px solid #000;
+    cursor: pointer;
+    transition: all .5s;
+}
+input:hover {
+    opacity: .9;
+}
