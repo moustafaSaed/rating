@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" sizes="40x40" href="./images/Untitled design (1).png">
+    <link rel="stylesheet" href="css/main.css">
+    <title>Thanks</title>
+</head>
+
+<body>
+    <div class="body">
+        <header>
+            <div class="logo"><img src="images/6.svg" alt=""></div>
+        </header>
+        <main>
+            <div class="rate-res">
+                <i class="fa-solid fa-ribbon"></i>
+                <p class="display-result res"></p>
+                <h2>Thanks for rating us</h2>
+                <p class="txt">we appreciate to do such and such with your bla bla</p>
+            </div>
+        </main>
+    </div>
+
+    <script>
+        const urlParams = new URLSearchParams(window.location.search);
+        const rate = urlParams.get('rate');
+        const displayRes = document.querySelector(".display-result");
+
+        displayRes.textContent = "you rate us : " + rate + " out of 5";
+
+        console.log(rate);
+        console.log(displayRes);
+    </script>
+    <script src="https://kit.fontawesome.com/f8fbadcbc5.js" crossorigin="anonymous"></script>
+</body>
+
+</html>
