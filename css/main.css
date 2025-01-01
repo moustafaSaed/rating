@@ -12,10 +12,23 @@ body {
     background-color: rgb(11, 0, 31);
     width: 95vw;
     height: 95vh;
-    position: absolute;
+    margin: 2.5vh 2.5vw;
+    /* position: absolute;
     left: 50%;
     top: 50%;
-    transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%); */
+    border-radius: 10px;
+    position: relative;
+}
+.body .code-angle {
+    position: absolute;
+    top: -5px;
+    left: 10px;
+    color: #178fc7;
+    font-size: 225px;
+    /* z-index: 999; */
+    rotate: 5deg;
+    opacity: .4;
 }
 
 header {
@@ -74,6 +87,7 @@ main {
 .rate-box ul.rate-nmbrs {
     list-style: none;
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
     justify-content: center;
     gap: 20px;
@@ -88,6 +102,7 @@ main {
     width: 30px;height: 30px;
     display: flex;align-items: center;justify-content: center;
     border-radius: 50%;
+    border-radius: 25%;
     background-color: #aaa;
     font-size: 20px;
     color: rgb(11, 0, 31);
@@ -151,4 +166,39 @@ main {
     width: 80%;
     text-align: center;
     margin: auto;
+}
+
+@media (max-width : 1060px) {
+    .rate-box, .rate-res {
+        width: 40vw;
+    }
+}
+@media (max-width : 780px) {
+    .rate-box, .rate-res {
+        width: 60vw;
+    }
+}
+@media (max-width : 520px) {
+    .body {
+        width: 97vw;
+        height: 97vh;
+    }
+    .rate-box, .rate-res {
+        width: 77vw;
+    }
+    .rate-box h2 {
+        width: 80%;
+    }
+    .rate-box p {
+        font-size: 18px;
+    }
+    .rate-box ul.rate-nmbrs {
+        gap: 10px;
+        width: 200px;
+        margin: auto;
+    }
+    .rate-box ul.rate-nmbrs li a {
+        width: 40px;height: 40px;
+        font-size: 24px;
+    }
 }
