@@ -96,7 +96,7 @@ main {
 
 
 
-.rate-box ul.rate-nmbrs li.active a {
+.rate-box ul.rate-nmbrs li a.active {
     background-color: rgb(23 143 199);
     color: #fff;
     border: 2px solid rgb(11, 0, 31);
